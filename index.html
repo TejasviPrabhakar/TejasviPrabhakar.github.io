@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <a href="#home" class="logo">Mama</a>
             <ul>
                 <li><a href="#about">Our Story</a></li>
@@ -19,87 +19,82 @@
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="#contact" class="btn nav-btn">Book a Table</a>
         </nav>
-        <div class="sticky-cta">
-            <a href="#contact" class="btn">Book a Table</a>
-            <a href="#menu" class="btn btn-secondary">Order Now</a>
-        </div>
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Welcome to Mama</h1>
-                <p>A journey of togetherness, where every meal feels like coming home.</p>
+                <p>A journey of togetherness, where every meal feels like coming home. [cite: 13]</p>
             </div>
         </section>
 
-        <section id="about" class="container">
-            <h2>Our Story</h2>
-            <div class="about-content">
-                <img src="https://i.postimg.cc/k47Z1K8M/restaurant-interior.jpg" alt="Family photo of restaurant owners">
+        <section id="about" class="container content-section">
+            <h2 class="fade-in">Our Story</h2>
+            <div class="about-content fade-in">
+                <img src="https://i.postimg.cc/t4d7YvD3/about-us-mama.jpg" alt="Cozy interior of Mama restaurant">
                 <div>
-                    <p>Since 2018, Mama - The Family Restaurant has been a warm, family-owned eatery in the heart of Bhopal. Our goal is simple: to bring together the rich tapestry of Indian regional flavors under one cozy roof. From the creamy gravies of North India to the tangy delights of the South, every dish reflects our passion for authentic, home-style cooking.</p>
-                    <p class="special-note">Daily Special: Paneer Butter Masala!</p>
+                    <p>Since 2018, Mama - The Family Restaurant has been a warm, family-owned eatery in the heart of Bhopal. [cite: 2, 3] Our goal is simple: to bring together the rich tapestry of Indian regional flavors under one cozy roof. [cite: 3] From the creamy gravies of North India to the tangy delights of the South, every dish reflects our passion for authentic, home-style cooking. [cite: 4]</p>
+                    <p class="special-note">"Our vision is to become Bhopal's premier destination for regional Indian cuisine while nurturing connections over shared meals." [cite: 11]</p>
                 </div>
             </div>
         </section>
 
-        <section id="menu" class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-grid">
+        <section id="menu" class="container content-section">
+            <h2 class="fade-in">Our Menu Showcase</h2>
+            <div class="menu-grid fade-in">
                 <div class="menu-item">
-                    <img src="https://i.postimg.cc/T3ANQ3fN/north-indian-thali.jpg" alt="North Indian Thali">
+                    <img src="https://i.postimg.cc/tJ7qB5n4/north-indian.jpg" alt="North Indian Thali">
                     <h3>North Indian Classics</h3>
-                    <p>Creamy gravies and tandoori delights.</p>
-                    <span>Starts at ₹250</span>
+                    <p>Rich, creamy gravies and aromatic tandoori delights.</p>
                 </div>
                 <div class="menu-item">
-                    <img src="https://i.postimg.cc/MHZp3bwm/dosa.jpg" alt="South Indian Dosa">
+                    <img src="https://i.postimg.cc/NjjfL2n1/south-indian.jpg" alt="South Indian Dosa">
                     <h3>South Indian Delights</h3>
-                    <p>Tangy, spicy, and everything nice.</p>
-                    <span>Starts at ₹150</span>
+                    <p>Tangy, spicy, and wholesome meals from the South.</p>
                 </div>
                 <div class="menu-item">
-                    <img src="https://i.postimg.cc/J0b6xYd0/indo-chinese-noodles.jpg" alt="Indo-Chinese Noodles">
+                    <img src="https://i.postimg.cc/wMSyVw6j/indo-chinese.jpg" alt="Indo-Chinese Noodles">
                     <h3>Indo-Chinese Creations</h3>
-                    <p>A fiery zest of bold flavors.</p>
-                    <span>Starts at ₹200</span>
+                    <p>A fiery and flavorful fusion of bold Asian tastes.</p>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials" class="container">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial-grid">
+        <section id="testimonials" class="container content-section">
+            <h2 class="fade-in">What Our Customers Say</h2>
+            <div class="testimonial-grid fade-in">
                 <div class="testimonial">
                     <p>"The best family restaurant in Bhopal! The food is authentic and the atmosphere is so welcoming. It truly feels like home."</p>
-                    <span>- Anjali S.</span>
+                    <span>- Anjali S. (Google Review)</span>
                 </div>
                 <div class="testimonial">
-                    <p>"A perfect spot for a weekend brunch with friends. The Indo-Chinese snacks are a must-try. Highly recommended!"</p>
-                    <span>- Rohan V.</span>
+                    <p>"A perfect spot for a weekend brunch. The Indo-Chinese snacks are a must-try. This place is an Instagram-worthy hangout for sure!" [cite: 20]</p>
+                    <span>- Rohan V. (Food Blogger)</span>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2>Book a Table or Make an Enquiry</h2>
-            <div class="contact-wrapper">
+        <section id="contact" class="container content-section">
+            <h2 class="fade-in">Book a Table or Make an Enquiry</h2>
+            <div class="contact-wrapper fade-in">
                 <form id="booking-form">
                     <h3>Reservations & Catering</h3>
+                    <p>For catering requests or group bookings, please fill out the form. [cite: 29]</p>
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your message (e.g., number of guests, date, or catering details)" required></textarea>
                     <button type="submit" class="btn">Send Request</button>
+                    <p id="form-status"></p>
                 </form>
                 <div class="location-details">
                     <h3>Visit Us</h3>
-                    <p>Mama - The Family Restaurant<br>Heart of Bhopal, Madhya Pradesh</p>
+                    <p>Mama - The Family Restaurant<br>In the heart of Bhopal, Madhya Pradesh</p>
                     <p><strong>Hours:</strong> 11:00 AM - 11:00 PM Daily</p>
-                    <p><strong>Parking:</strong> Street parking available.</p>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.373977161555!2d77.4983084!3d23.192809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41e8c62394bf%3A0xcc5d0c89acd1c4cc!2sMama%20-%20The%20Family%20Restaurant!5e0!3m2!1sen!2sin!4v1672548858348!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.625390777595!2d77.49829817594924!3d23.18342287906109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41e8c62394bf%3A0xcc5d0c89acd1c4cc!2sMAMA%20The%20Family%20Restaurant!5e0!3m2!1sen!2sin!4v1696609919013!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -107,7 +102,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Mama - The Family Restaurant. All Rights Reserved.</p>
+        <div class="container footer-content">
+            <p>© 2025 Mama - The Family Restaurant. Designed with ❤️.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
