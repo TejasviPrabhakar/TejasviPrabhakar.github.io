@@ -1,26 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // --- Form Submission Handler ---
     const form = document.getElementById('booking-form');
+    const formStatus = document.getElementById('form-status');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Get form data
+        event.preventDefault();
+        
         const name = form.querySelector('input[name="name"]').value;
-        const email = form.querySelector('input[name="email"]').value;
-        const message = form.querySelector('textarea[name="message"]').value;
+        formStatus.textContent = `Thank you, ${name}! Your request has been sent.`;
+        formStatus.style.color = '#3D405B';
 
-        // Basic validation
-        if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-            alert('Please fill out all fields.');
-            return;
-        }
+        setTimeout(() => {
+            form.reset();
+            formStatus.textContent = '';
+        }, 4000);
+    });
 
-        // Simulate form submission
-        console.log(`New Enquiry:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
-        
-        alert(`Thank you, ${name}! Your request has been sent. We will get back to you shortly.`);
-        
-        // Clear the form
-        form.reset();
+    // --- Fade-in on Scroll Animation ---
+    const fadeInSections = document.querySelectorAll('.fade-in');
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1 // Triggers when 10% of the element is visible
+    });
+
+    fadeInSections.forEach(section => {
+        sectionObserver.observe(section);
     });
 });
