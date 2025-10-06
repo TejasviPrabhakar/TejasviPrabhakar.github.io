@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mama - The Family Restaurant</title>
+    <title>Mama Restaurant - The Family Eatery</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="container">
-            <a href="#home" class="logo">Mama</a>
+            <a href="#home" class="logo">Mama Restaurant</a>
             <ul>
                 <li><a href="#about">Our Story</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -26,7 +26,7 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to Mama</h1>
+                <h1>Welcome to Mama Restaurant</h1>
                 <p>A journey of togetherness, where every meal feels like coming home.</p>
             </div>
         </section>
@@ -36,8 +36,8 @@
             <div class="about-content fade-in">
                 <img src="images/about-us.jpg" alt="Cozy interior of Mama restaurant">
                 <div>
-                    <p>Since 2018, Mama - The Family Restaurant has been a warm, family-owned eatery in the heart of Bhopal. Our goal is simple: to bring together the rich tapestry of Indian regional flavors under one cozy roof. From the creamy gravies of North India to the tangy delights of the South, every dish reflects our passion for authentic, home-style cooking.</p>
-                    <p class="special-note">"Our vision is to become Bhopal's premier destination for regional Indian cuisine while nurturing connections over shared meals."</p>
+                    [cite_start]<p>Since 2018, Mama Restaurant has been a warm, family-owned eatery in the heart of Bhopal[cite: 2, 3]. [cite_start]Our goal is simple: to bring together the rich tapestry of Indian regional flavors under one cozy roof[cite: 3]. [cite_start]From the creamy gravies of North India to the tangy delights of the South, every dish reflects our passion for authentic, home-style cooking[cite: 4].</p>
+                    [cite_start]<p class="special-note">"Our vision is to become Bhopal's premier destination for regional Indian cuisine while nurturing connections over shared meals[cite: 11]."</p>
                 </div>
             </div>
         </section>
@@ -45,17 +45,17 @@
         <section id="menu" class="container content-section">
             <h2 class="fade-in">Our Menu Showcase</h2>
             <div class="menu-grid fade-in">
-                <div class="menu-item">
+                <div class="menu-item" data-menu="north-indian">
                     <img src="images/north-indian.jpg" alt="North Indian Thali">
                     <h3>North Indian Classics</h3>
                     <p>Rich, creamy gravies and aromatic tandoori delights.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item" data-menu="south-indian">
                     <img src="images/south-indian.jpg" alt="South Indian Dosa">
                     <h3>South Indian Delights</h3>
                     <p>Tangy, spicy, and wholesome meals from the South.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item" data-menu="indo-chinese">
                     <img src="images/indo-chinese.jpg" alt="Indo-Chinese Noodles">
                     <h3>Indo-Chinese Creations</h3>
                     <p>A fiery and flavorful fusion of bold Asian tastes.</p>
@@ -91,7 +91,7 @@
                 </form>
                 <div class="location-details">
                     <h3>Visit Us</h3>
-                    <p>Mama - The Family Restaurant<br>In the heart of Bhopal, Madhya Pradesh</p>
+                    <p>Mama Restaurant<br>In the heart of Bhopal, Madhya Pradesh</p>
                     <p><strong>Hours:</strong> 11:00 AM - 11:00 PM Daily</p>
                     <div class="map-container">
                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.110515152862!2d77.4981140751021!3d23.16631187904771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41e8c62394bf%3A0xcc5d0c89acd1c4cc!2sMama%20The%20Family%20Restaurant!5e0!3m2!1sen!2sin!4v1696616012345!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -103,7 +103,7 @@
 
     <footer>
         <div class="container footer-content">
-            <p>© 2025 Mama - The Family Restaurant. Designed with ❤️.</p>
+            <p>© 2025 Mama Restaurant. Designed with ❤️.</p>
             <div class="social-links">
                 <a href="#">Instagram</a>
                 <a href="#">Facebook</a>
@@ -111,6 +111,13 @@
             </div>
         </div>
     </footer>
+
+    <div id="menu-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
