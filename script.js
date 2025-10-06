@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sectionObserver.observe(section);
     });
 
-    // --- NEW: Menu Modal Functionality ---
+    // --- Menu Modal Functionality ---
     const menuItems = document.querySelectorAll('.menu-item');
     const modal = document.getElementById('menu-modal');
     const modalBody = document.getElementById('modal-body');
